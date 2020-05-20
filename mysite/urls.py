@@ -20,3 +20,6 @@ urlpatterns = [
     path('', include('polls.urls')),
     path('admin/', admin.site.urls),
 ]
+
+handler404 = 'polls.views.custom_error_pages.not_found_handler'
+handler403 = 'polls.views.custom_error_pages.forbidden_handler'

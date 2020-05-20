@@ -8,7 +8,10 @@ li a:hover {
     background-color: black;
 }
 
+h1 {
+    background-color: red;
+}
+
 body {
-    /*background: white url("images/bg.jpg") no-repeat;*/
-    /*background-size: cover;*/
+    background-color: aqua;
 }
