@@ -1,0 +1,17 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+<h1>Welcome to index page!</h1>
+<ul>
+    <li>
+        <a href="{% url 'polls:register' %}">
+            Registration page
+        </a>
+    </li>
+</ul>
+
+{% if messages %}
+    {% for message in messages %}
+        <p>{{ message }}</p>
+    {% endfor %}
+{% endif %}
