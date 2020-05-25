@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Statement detail page</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/css/colors.css' %}">
+</head>
+<body>
+    <h1>This is a statement detail page</h1>
+    <p>Statement id is: {{ statement.id }}</p>
+    <p>File data:</p><br>
+    <p>File name: {{ statement.file }}</p>
+    <p>File size: {{ statement.file.size }}</p>
+    <img src="{% static 'polls/images/bg.jpg' %}" alt="This is an image">
+    <img src="{{ statement.file }}" alt="This is an image">
+</body>
+</html>

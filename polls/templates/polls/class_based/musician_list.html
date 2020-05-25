@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Musician list</title>
+</head>
+<body>
+    <ul>
+        {% for musician in musician_list %}
+            <li>
+                <a href="{% url 'polls:musician_update' pk=musician.id %}">
+                    {{ musician.name }} Update
+                </a>
+                <a href="{% url 'polls:musician_delete' pk=musician.id %}">
+                    {{ musician.name }} Delete
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

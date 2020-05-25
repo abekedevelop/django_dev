@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Statement List</title>
+</head>
+<body>
+    <a href="{% url 'polls:index' %}">Index page</a>
+    {% block content %}
+        <h2>Statements</h2>
+        <ul>
+            {%  for statement in stats %}
+                <li>
+                    <a href="{% url 'polls:statement_detail' pk=statement.id %}">
+                        {{ statement.additional_data }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endblock %}
+</body>
+</html>

@@ -1,11 +1,27 @@
 {% load static %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+{#<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">#}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/css/colors.css' %}">
 <h1>Welcome to index page!</h1>
 <ul>
     <li>
-        <a href="{% url 'polls:register' %}">
-            Registration page
+        <a href="{% url 'polls:model_upload' %}">
+            Model upload page
+        </a>
+    </li>
+    <li>
+        <a href="{% url 'polls:statement_list' %}">
+            Statement list
+        </a>
+    </li>
+    <li>
+        <a href="{% url 'polls:musician_create' %}">
+            Create musician
+        </a>
+    </li>
+        <li>
+        <a href="{% url 'polls:musician_list' %}">
+            Musician list
         </a>
     </li>
 </ul>

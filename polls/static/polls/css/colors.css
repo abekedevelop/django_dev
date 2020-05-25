@@ -1,0 +1,29 @@
+li {
+  list-style-type: lower-greek;
+}
+
+li a {
+  background-color: beige;
+  text-decoration: none;
+  font-family: "Courier New", sans-serif;
+  /*padding: 1em;*/
+}
+
+li a:hover {
+  background-color: #7bff75;
+}
+
+h1 {
+  background-color: aliceblue;
+  text-align: center;
+  margin: 1em 0;
+}
+
+img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+img:hover {
+  width: 200px;
+}
